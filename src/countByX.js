@@ -17,10 +17,10 @@
  * @return {number[]}
  */
 function countByX(x, length) {
-  const arr = [x];
+  const arr = [];
 
-  for (let i = 1; i <= length - 1; i++) {
-    arr.push(arr[i - 1] + x);
+  for (let i = 1; i <= length; i++) {
+    arr.push(x * i);
   }
 
   return arr;
