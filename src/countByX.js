@@ -18,12 +18,10 @@
  */
 function countByX(x, length) {
   const finalArr = [];
-  let counter = length;
   let value = x;
 
-  while (counter > 0) {
+  for (let i = length; i > 0; i--) {
     finalArr.push(value);
-    counter--;
     value += x;
   }
 
