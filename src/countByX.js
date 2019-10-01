@@ -19,14 +19,11 @@
 function countByX(x, length) {
 
   const numberList = [];
-  let numberStart = x;
 
-  for (let i = 0; i < length; i++) {
-
-    numberList.push(numberStart);
-		numberStart = numberStart + x;
+  for (let i = 1; i <= length; i++) {
+    numberList.push(x * i);
   }
-  
+
   return numberList;
 }
 
