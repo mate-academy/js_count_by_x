@@ -17,12 +17,12 @@
  * @return {number[]}
  */
 function countByX(x, length) {
-  const result = [];
+  const arr = [];
   for (let i = 1; i <= length; i++) {
     const number = x * i;
-    result.push(number);
+    arr.push(number);
   }
-  return result;
+  return arr;
 }
 
 module.exports = countByX;
