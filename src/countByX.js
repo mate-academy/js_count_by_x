@@ -19,8 +19,8 @@
 function countByX(x, length) {
   const arr = [];
 
-  for (let i = 0; i < length; i++) {
-    arr.push((i + 1) * x);
+  for (let i = 1; i <= length; i++) {
+    arr.push(i * x);
   }
 
   return arr;
