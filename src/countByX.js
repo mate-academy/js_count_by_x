@@ -18,6 +18,13 @@
  */
 function countByX(x, length) {
   // write code here
+  const count = [];
+
+  for (let i = 1; i <= length; i++) {
+    count.push(i * x);
+  }
+
+  return count;
 }
 
 module.exports = countByX;
