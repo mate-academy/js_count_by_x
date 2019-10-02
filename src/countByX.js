@@ -16,13 +16,11 @@
  *
  * @return {number[]}
  */
+
 function countByX(x, length) {
-  let start = x;
-  let iteration = length;
-  const step = x;
-  const arr = [x];
-  for (start; iteration - 1; iteration--) {
-    arr.push(start = start + step);
+  const arr = [];
+  for (let i = 1; i <= length; i++) {
+    arr.push(x * i);
   }
   return arr;
 }
