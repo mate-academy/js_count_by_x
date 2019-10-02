@@ -18,8 +18,8 @@
  */
 function countByX(x, length) {
   const arr = [];
-  for (let i = 0; i < length; i++) {
-    arr[i] = x * (i + 1);
+  for (let i = 1; i <= length; i++) {
+    arr.push(x * i);
   }
   return arr;
 }
