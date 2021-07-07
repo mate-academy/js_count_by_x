@@ -17,7 +17,11 @@
  * @return {number[]}
  */
 function countByX(x, length) {
-  // write code here
+  const numbersList = [];
+  for (let i = 1; numbersList.length < length; i++) {
+    numbersList.push(i * x);
+  }
+  return numbersList;
 }
 
 module.exports = countByX;
